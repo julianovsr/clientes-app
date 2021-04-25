@@ -19,7 +19,7 @@ import { ClientesModule } from './clientes/clientes.module'
     AppRoutingModule,
     TemplateModule,
     ClientesModule
-  ]
+  ],
   
   providers: [],
   bootstrap: [AppComponent]
