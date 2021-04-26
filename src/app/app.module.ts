@@ -4,23 +4,22 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
-import { TemplateModule } from './template/template.module';
-import { HomeComponent } from './home/home.component';
-
-import { ClientesModule } from './clientes/clientes.module'
-
 @NgModule({
   declarations: [
-    AppComponent,
-    HomeComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
+<<<<<<< HEAD
     AppRoutingModule,
     TemplateModule,
     ClientesModule
   ],
   
+=======
+    AppRoutingModule
+  ],
+>>>>>>> parent of 814c421 (Adição do Módulo Home e Clientes)
   providers: [],
   bootstrap: [AppComponent]
 })
