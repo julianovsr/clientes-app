@@ -19,12 +19,18 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "noImplicitThis": false,
+    "noImplicitAny": false,
+    "allowSyntheticDefaultImports": true,
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,
     "strictInjectionParameters": true,
     "strictInputAccessModifiers": true,
-    "strictTemplates": true
-  }
+    "strictTemplates": true,
+    
+  },
+  "esModuleInterop": true,
+  "allowSyntheticDefaultImports": true
 }
