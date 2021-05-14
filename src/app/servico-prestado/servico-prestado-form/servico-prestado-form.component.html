@@ -5,13 +5,27 @@
 
 <div class="container">
     <form #form="ngForm" (submit)="onSubmit()">
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="alert alert-success" role="alert" *ngIf="sucessoSalvaCliente">
+                    Serviço salvo com sucesso!
+                </div>
+               
+                <div class="alert alert-danger" role="alert" *ngFor="let error of errors">
+                    {{error}}
+                </div>
+
+            </div>
+        </div>
+
         <div class="row">
             <div class="col-md-6">
                 <div class="form-gr2oup" >
                     <label >Cliente:  </label>
                     <select class="form-control"[ngModelOptions]="{standalone: true}" 
                                                 [(ngModel)]="servico.idCliente">
-                        <option value="">Selecione...</option>
+                        <option selected="selected" value="">Selecione...</option>
                         <option *ngFor="let cliente of clientes" [ngValue]="cliente.id">
                             {{ cliente.nome }}
                         </option>
