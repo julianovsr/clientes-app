@@ -69,7 +69,7 @@ export class ClientesFormComponent implements OnInit {
   
   irParaListaClientes(){
 
-    this.router.navigate(['/clientes-lista'])
+    this.router.navigate(['/clientes/lista'])
 
   }
   
